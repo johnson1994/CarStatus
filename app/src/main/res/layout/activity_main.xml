@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ap="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorBlack"
+    tools:context="com.johnson.carstatus.MainActivity">
+
+    <ImageView
+        android:id="@+id/compass_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/compass"/>
+
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        android:padding="2dp" />
+
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/chart2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="250dp"
+        android:padding="2dp" />
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_text"
+        android:layout_marginTop="5dp"
+        android:text="status"
+        android:textColor="@color/worldNormal"/>
+
+    <TextView
+        android:id="@+id/other_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status_text"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/worldNormal"/>
+
+    <TextView
+        android:id="@+id/speed_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/other_msg"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/worldNormal"/>
+
+    <Button
+        android:id="@+id/control_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/start_btn"/>
+
+</RelativeLayout>
